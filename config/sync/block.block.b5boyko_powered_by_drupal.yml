@@ -1,0 +1,22 @@
+uuid: 2547830a-433b-427b-9800-b4bc84107600
+langcode: uk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5boyko
+_core:
+  default_config_hash: Rm8yBFBUaKPi1ujmzz5eUI0VcCRKv2TQn2WIe9FUl4E
+id: b5boyko_powered_by_drupal
+theme: b5boyko
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Працює на Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

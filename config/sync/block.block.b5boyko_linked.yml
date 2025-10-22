@@ -1,0 +1,20 @@
+uuid: 321bb6dd-96ce-4c76-ada1-dfcf5805868a
+langcode: uk
+status: true
+dependencies:
+  module:
+    - invite_link
+  theme:
+    - b5boyko
+id: b5boyko_linked
+theme: b5boyko
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'invite_link_block:linked'
+settings:
+  id: 'invite_link_block:linked'
+  label: Linked
+  label_display: visible
+  provider: invite_link
+visibility: {  }
