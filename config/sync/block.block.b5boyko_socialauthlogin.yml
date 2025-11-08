@@ -1,0 +1,25 @@
+uuid: 165348e5-09ca-450e-a877-9ffde8e3d86d
+langcode: uk
+status: true
+dependencies:
+  module:
+    - social_auth
+    - system
+  theme:
+    - b5boyko
+id: b5boyko_socialauthlogin
+theme: b5boyko
+region: content
+weight: 0
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Social Auth Login'
+  label_display: visible
+  provider: social_auth
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/user/register\r\n/user/login"

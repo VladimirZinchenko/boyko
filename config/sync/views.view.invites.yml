@@ -2,8 +2,13 @@ uuid: 41173508-581a-4845-883f-5e8bac86f03d
 langcode: uk
 status: true
 dependencies:
+  config:
+    - system.menu.main
+    - user.role.administrator
+    - user.role.collector
   module:
     - invite
+    - user
 id: invites
 label: Invites
 module: views
@@ -102,8 +107,11 @@ display:
           sort_asc_label: Зрост
           sort_desc_label: Спад
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            collector: collector
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -115,6 +123,9 @@ display:
         type: default
       row:
         type: 'entity:invite'
+        options:
+          relationship: none
+          view_mode: default
       query:
         type: views_query
         options:
@@ -132,6 +143,21 @@ display:
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
+      tags: {  }
+  block_1:
+    id: block_1
+    display_title: Блок
+    display_plugin: block
+    position: 2
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url.query_args
+        - user.roles
       tags: {  }
   page_1:
     id: page_1
@@ -141,9 +167,20 @@ display:
     display_options:
       display_extenders: {  }
       path: invites
+      menu:
+        type: normal
+        title: Invites
+        description: ''
+        weight: -49
+        enabled: true
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url.query_args
+        - user.roles
       tags: {  }
