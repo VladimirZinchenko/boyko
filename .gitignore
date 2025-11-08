@@ -99,3 +99,6 @@ sites/simpletest
 
 # Ignore .env files as they are personal
 /.env
+
+# Ignore personal settings
+/config/sync/social_auth_google.settings.yml
