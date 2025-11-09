@@ -1,19 +1,23 @@
-uuid: 41173508-581a-4845-883f-5e8bac86f03d
+uuid: 187c1d0c-bb80-4865-bd71-e9bd55029c6f
 langcode: uk
 status: true
 dependencies:
   config:
+    - image.style.large
     - system.menu.main
     - user.role.administrator
+    - user.role.collector
   module:
-    - invite
+    - flipbook
+    - image
+    - semanticviews
     - user
-id: invites
-label: Invites
+id: flipbooks
+label: Flipbooks
 module: views
 description: ''
 tag: ''
-base_table: invite
+base_table: flipbook
 base_field: id
 display:
   default:
@@ -22,18 +26,18 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Invites
+      title: Flipbooks
       fields:
-        operations:
-          id: operations
-          table: invite
-          field: operations
+        name:
+          id: name
+          table: flipbook
+          field: name
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: null
-          entity_field: null
-          plugin_id: entity_operations
+          entity_field: name
+          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -67,21 +71,102 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          destination: false
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        flipbook_cover__target_id:
+          id: flipbook_cover__target_id
+          table: flipbook
+          field: flipbook_cover__target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: flipbook
+          entity_field: flipbook_cover
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: false
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: content
+            image_style: large
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: mini
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 10
+          items_per_page: 12
           total_pages: null
           id: 0
           tags:
@@ -109,6 +194,7 @@ display:
         type: role
         options:
           role:
+            collector: collector
             administrator: administrator
       cache:
         type: tag
@@ -118,12 +204,29 @@ display:
       arguments: {  }
       filters: {  }
       style:
-        type: default
-      row:
-        type: 'entity:invite'
+        type: semanticviews_style
         options:
-          relationship: none
-          view_mode: default
+          grouping: {  }
+          group:
+            element_type: h3
+            attributes: class|title
+          list:
+            element_type: div
+            attributes: class|row
+          row:
+            element_type: div
+            attributes: 'class|col-md-3 mb-5'
+            last_every_nth: '0'
+            first_class: first
+            last_class: last
+            striping_classes: 'odd even'
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       query:
         type: views_query
         options:
@@ -139,22 +242,30 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - user.roles
       tags: {  }
   block_1:
     id: block_1
-    display_title: Блок
+    display_title: Block
     display_plugin: block
     position: 2
     display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 6
+      defaults:
+        pager: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - user.roles
       tags: {  }
   page_1:
@@ -164,13 +275,12 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: invites
+      path: flipbooks
       menu:
         type: normal
-        title: Invites
+        title: Flipbooks
         description: ''
-        weight: -49
-        enabled: true
+        weight: 0
         expanded: false
         menu_name: main
         parent: ''
@@ -178,6 +288,7 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
+        - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
         - user.roles

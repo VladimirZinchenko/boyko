@@ -4,3 +4,15 @@
 		margin: auto;
 	}
 }
+.hero {
+	position: relative; /* Anchor the image */
+	height: 400px;
+}
+
+.hero img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Prevents squishing */
+}

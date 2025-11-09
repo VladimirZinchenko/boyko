@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - invite_link
+    - system
+    - user
   theme:
     - b5boyko
 id: b5boyko_linked
@@ -17,4 +19,15 @@ settings:
   label: Linked
   label_display: visible
   provider: invite_link
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /user/1
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
