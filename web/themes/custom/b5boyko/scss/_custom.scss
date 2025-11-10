@@ -16,3 +16,18 @@
 	height: 100%;
 	object-fit: cover; /* Prevents squishing */
 }
+
+#block-b5boyko-socialauthlogin {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+		img {
+			padding: 0.5rem;
+	}
+}
+
+.ctrl .fnavbar .fnav .fnav-item.cmdPrint {
+	display: none;
+}

@@ -5,21 +5,30 @@ dependencies:
   module:
     - social_auth
     - system
+    - user
   theme:
     - b5boyko
 id: b5boyko_socialauthlogin
 theme: b5boyko
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: social_auth_login
 settings:
   id: social_auth_login
-  label: 'Social Auth Login'
+  label: 'Continue with Google'
   label_display: visible
   provider: social_auth
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/user/register\r\n/user/login"
+    pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      administrator: administrator

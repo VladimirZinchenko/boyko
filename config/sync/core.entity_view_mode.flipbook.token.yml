@@ -1,0 +1,11 @@
+uuid: e84a6fd4-be61-48fa-b4f0-a931fc85261a
+langcode: uk
+status: true
+dependencies:
+  module:
+    - flipbook
+id: flipbook.token
+label: Token
+description: ''
+targetEntityType: flipbook
+cache: true
