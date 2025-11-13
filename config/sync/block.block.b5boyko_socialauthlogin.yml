@@ -23,7 +23,7 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: "/welcome\r\n/user/login"
   user_role:
     id: user_role
     negate: false
