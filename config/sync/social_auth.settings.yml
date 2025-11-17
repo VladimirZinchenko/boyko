@@ -4,7 +4,7 @@ auth: {  }
 post_login: /
 user_allowed: register
 redirect_user_form: false
-disable_admin_login: true
+disable_admin_login: false
 disabled_roles:
   collector: '0'
   content_editor: '0'

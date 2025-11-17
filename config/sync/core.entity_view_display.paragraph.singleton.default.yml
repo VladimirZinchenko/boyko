@@ -1,0 +1,69 @@
+uuid: 0617b24c-9395-42bd-89c3-8e92aa0f1285
+langcode: uk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.singleton.field_bgcolor
+    - field.field.paragraph.singleton.field_bgimage
+    - field.field.paragraph.singleton.field_image
+    - field.field.paragraph.singleton.field_imagestyle
+    - field.field.paragraph.singleton.field_imgposition
+    - field.field.paragraph.singleton.field_text
+    - paragraphs.paragraphs_type.singleton
+  module:
+    - file
+    - image
+    - options
+    - text
+id: paragraph.singleton.default
+targetEntityType: paragraph
+bundle: singleton
+mode: default
+content:
+  field_bgcolor:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_bgimage:
+    type: file_url_plain
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_imagestyle:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_imgposition:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }
