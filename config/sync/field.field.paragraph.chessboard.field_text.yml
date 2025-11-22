@@ -18,7 +18,7 @@ required: false
 translatable: false
 default_value:
   -
-    value: '<h1>Felis bibendum ut tristique et ipsum</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Faucibus in ornare quam viverra orci sagittis eu volutpat. Lacinia quis vel eros donec ac odio tempor orci dapibus.</p>'
+    value: '<h1>Felis bibendum et ipsum</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Faucibus in ornare quam viverra orci sagittis eu volutpat. Lacinia quis vel eros donec ac odio tempor orci dapibus.</p>'
     format: full_html
 default_value_callback: ''
 settings:

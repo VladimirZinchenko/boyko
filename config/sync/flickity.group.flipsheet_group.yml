@@ -24,7 +24,7 @@ settings:
   adaptive_height: false
   watch_css: false
   as_nav_for: ''
-  drag_threshold: 3
+  drag_threshold: 30
   selected_attraction: 0.025
   friction: 0.28
   free_scroll_friction: 0.075

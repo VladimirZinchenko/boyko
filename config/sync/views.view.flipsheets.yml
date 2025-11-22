@@ -7,7 +7,6 @@ dependencies:
     - node.type.sheet
     - system.menu.main
     - user.role.administrator
-    - user.role.anonymous
   module:
     - flickity_views
     - node
@@ -97,7 +96,6 @@ display:
         type: role
         options:
           role:
-            anonymous: anonymous
             administrator: administrator
       cache:
         type: tag
