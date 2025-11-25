@@ -1,26 +1,25 @@
-uuid: 0c4b23af-e07e-45e3-ab82-b862c20111da
+uuid: fda8d034-79bf-4fd4-8acb-d908fbd16057
 langcode: uk
 status: true
 dependencies:
   config:
-    - field.field.paragraph.chessboard.field_bgcolor
-    - field.field.paragraph.chessboard.field_image
-    - field.field.paragraph.chessboard.field_imagestyle
-    - field.field.paragraph.chessboard.field_imgposition
-    - field.field.paragraph.chessboard.field_text
+    - field.field.paragraph.album.field_bgcolor
+    - field.field.paragraph.album.field_image
+    - field.field.paragraph.album.field_imagestyle
+    - field.field.paragraph.album.field_text
     - image.style.thumbnail
-    - paragraphs.paragraphs_type.chessboard
+    - paragraphs.paragraphs_type.album
   module:
     - image
     - text
-id: paragraph.chessboard.default
+id: paragraph.album.default
 targetEntityType: paragraph
-bundle: chessboard
+bundle: album
 mode: default
 content:
   field_bgcolor:
     type: options_select
-    weight: 4
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -34,19 +33,13 @@ content:
     third_party_settings: {  }
   field_imagestyle:
     type: options_select
-    weight: 2
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_imgposition:
-    type: options_select
     weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_text:
     type: text_textarea
-    weight: 3
+    weight: 2
     region: content
     settings:
       rows: 5

@@ -1,16 +1,16 @@
-uuid: 5cb11a24-142e-4435-b010-6ec76c73de5a
+uuid: b0668274-599a-4355-bd2d-e9c2f71d47c6
 langcode: uk
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_video
-    - paragraphs.paragraphs_type.chessboard
+    - paragraphs.paragraphs_type.movie
   module:
     - file
-id: paragraph.chessboard.field_video
+id: paragraph.movie.field_video
 field_name: field_video
 entity_type: paragraph
-bundle: chessboard
+bundle: movie
 label: Video
 description: ''
 required: false
