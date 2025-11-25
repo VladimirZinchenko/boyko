@@ -40,7 +40,7 @@ height: inherit;
 	}
 }
 
-.paragraph--type--chessboard video {
+.paragraph video {
 	height: 320px;
 	@include media-breakpoint-up(sm) {
 		height: 400px;
@@ -82,12 +82,12 @@ height: inherit;
 		}
 	}
 }
-.paragraph--type--singleton {
+/*.paragraph--type--singleton {
 	height: 1440px;
 	@include media-breakpoint-up(lg) {
 		height: 1280px;
 	}
-}
+}*/
 
 #block-b5boyko-socialauthlogin {
 	display: flex;

@@ -56,11 +56,6 @@
     <div class="col-lg-6">
 	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
         {{ content.field_image }}
-		{% if content.field_video|render|trim is not empty %}
-		<video style="max-width:100%;" loop="loop" muted="muted" autoplay="autoplay">
-		<source class="object-fit-cover" src="{{ content.field_video.0 }}">
-		</video>
-		{% endif %}
     </div>
 	</div>
 	<div class="col-lg-6">
@@ -78,11 +73,6 @@
     <div class="col-lg-6 order-1 order-lg-2">
 	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
         {{ content.field_image }}
-		{% if content.field_video|render|trim is not empty %}
-		<video style="max-width:100%;" loop="loop" muted="muted" autoplay="autoplay">
-		<source class="object-fit-cover" src="{{ content.field_video.0 }}">
-		</video>
-		{% endif %}
 	</div>
 	</div>
     <div class="col-lg-6 order-2 order-lg-1">

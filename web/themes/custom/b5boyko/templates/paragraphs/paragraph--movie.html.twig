@@ -47,22 +47,25 @@
   ]
 %}
 {% block paragraph %}
-<div class="paragraph-bg" style="background-image: url('{{ content.field_bgimage.0 }}') !important;">
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_bgcolor','field_text','field_imgposition','field_image','field_imagestyle','field_bgimage') }}
+      {{ content|without('field_bgcolor','field_text','field_imgposition','field_video') }}
 	  
 	  {% if paragraph.field_imgposition.0.value =='left' %}
 <div class="row g-0">
     <div class="col-lg-6">
-	<div class="card border-0 h-100 {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
+	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+		{% if content.field_video|render|trim is not empty %}
+		<video style="max-width:100%;" loop="loop" muted="muted" autoplay="autoplay">
+		<source class="object-fit-cover" src="{{ content.field_video.0 }}">
+		</video>
+		{% endif %}
     </div>
 	</div>
 	<div class="col-lg-6">
-        <div class="card border-0 h-100">
-            <div class="card-body align-items-center justify-content-center d-flex">
-                <div class="p-4 {{ content.field_bgcolor.0 }}">
+        <div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+            <div class="card-body p-4 align-items-center justify-content-center d-flex">
+                <div>
                     {{ content.field_text }}
                 </div>
             </div>
@@ -72,14 +75,18 @@
 {% else %}
 <div class="row g-0">
     <div class="col-lg-6 order-1 order-lg-2">
-	<div class="card border-0 h-100 {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
+	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+		{% if content.field_video|render|trim is not empty %}
+		<video style="max-width:100%;" loop="loop" muted="muted" autoplay="autoplay">
+		<source class="object-fit-cover" src="{{ content.field_video.0 }}">
+		</video>
+		{% endif %}
 	</div>
 	</div>
     <div class="col-lg-6 order-2 order-lg-1">
-        <div class="card border-0 h-100">
-            <div class="card-body align-items-center justify-content-center d-flex">
-                <div class="p-4 {{ content.field_bgcolor.0 }}">
+        <div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+            <div class="card-body p-4 align-items-center justify-content-center d-flex">
+                <div>
                     {{ content.field_text }}
                 </div>
             </div>
@@ -89,5 +96,4 @@
 {% endif %}
     {% endblock %}
   </div>
-</div>
 {% endblock paragraph %}

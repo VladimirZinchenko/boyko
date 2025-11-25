@@ -47,47 +47,19 @@
   ]
 %}
 {% block paragraph %}
-<div class="paragraph-bg" style="background-image: url('{{ content.field_bgimage.0 }}') !important;">
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_bgcolor','field_text','field_imgposition','field_image','field_imagestyle','field_bgimage') }}
-	  
-	  {% if paragraph.field_imgposition.0.value =='left' %}
-<div class="row g-0">
-    <div class="col-lg-6">
-	<div class="card border-0 h-100 {{content.field_imagestyle.0}}">
+      {{ content|without('field_bgcolor','field_text','field_image','field_imagestyle') }}
+	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
         {{ content.field_image }}
     </div>
-	</div>
-	<div class="col-lg-6">
-        <div class="card border-0 h-100">
-            <div class="card-body align-items-center justify-content-center d-flex">
-                <div class="p-4 {{ content.field_bgcolor.0 }}">
+	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+            <div class="card-body p-4 align-items-center justify-content-center d-flex">
+                <div>
                     {{ content.field_text }}
                 </div>
             </div>
-        </div>
     </div>
-</div>
-{% else %}
-<div class="row g-0">
-    <div class="col-lg-6 order-1 order-lg-2">
-	<div class="card border-0 h-100 {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
-	</div>
-	</div>
-    <div class="col-lg-6 order-2 order-lg-1">
-        <div class="card border-0 h-100">
-            <div class="card-body align-items-center justify-content-center d-flex">
-                <div class="p-4 {{ content.field_bgcolor.0 }}">
-                    {{ content.field_text }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-{% endif %}
     {% endblock %}
   </div>
-</div>
 {% endblock paragraph %}
