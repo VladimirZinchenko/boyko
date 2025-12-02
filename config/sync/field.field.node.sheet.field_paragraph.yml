@@ -23,7 +23,16 @@ settings:
     target_bundles: null
     negate: 0
     target_bundles_drag_drop:
+      album:
+        weight: -8
+        enabled: false
       chessboard:
-        weight: 2
+        weight: -9
+        enabled: false
+      movie:
+        weight: -7
+        enabled: false
+      singleton:
+        weight: -6
         enabled: false
 field_type: entity_reference_revisions

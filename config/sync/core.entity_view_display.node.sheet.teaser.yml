@@ -5,6 +5,8 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.sheet.body
+    - field.field.node.sheet.feeds_item
+    - field.field.node.sheet.field_catalog_number
     - field.field.node.sheet.field_paragraph
     - node.type.sheet
   module:
@@ -29,5 +31,7 @@ content:
     weight: 100
     region: content
 hidden:
+  feeds_item: true
+  field_catalog_number: true
   field_paragraph: true
   langcode: true
