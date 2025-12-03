@@ -54,7 +54,7 @@
 	  {% if paragraph.field_imgposition.0.value =='left' %}
 <div class="row g-0">
     <div class="col-lg-6">
-	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+	<div class="card border-0 h-100 ratio ratio-1x1 {{ content.field_bgcolor.0 }}">
 		{% if content.field_video|render|trim is not empty %}
 		<video style="max-width:100%;" loop="loop" muted="muted" autoplay="autoplay">
 		<source class="object-fit-cover" src="{{ content.field_video.0 }}">
@@ -75,7 +75,7 @@
 {% else %}
 <div class="row g-0">
     <div class="col-lg-6 order-1 order-lg-2">
-	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
+	<div class="card border-0 h-100 ratio ratio-1x1 {{ content.field_bgcolor.0 }}">
 		{% if content.field_video|render|trim is not empty %}
 		<video style="max-width:100%;" loop="loop" muted="muted" autoplay="autoplay">
 		<source class="object-fit-cover" src="{{ content.field_video.0 }}">
@@ -94,6 +94,7 @@
     </div>
 </div>
 {% endif %}
+<div class="paragraph-footer {{ content.field_bgcolor.0 }}"></div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

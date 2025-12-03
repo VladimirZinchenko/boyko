@@ -7,8 +7,9 @@ _core:
 id: feedback
 label: "Зворотний зв'язок вебсайту"
 recipients:
-  - admin@example.com
+  - 5910574@gmail.com
+  - acousticalligat@gmail.com
 reply: ''
 weight: 0
 message: 'Ваше повідомлення було відправлене.'
-redirect: ''
+redirect: /welcome

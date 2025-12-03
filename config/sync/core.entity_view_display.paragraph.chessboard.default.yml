@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.chessboard.field_bgcolor
     - field.field.paragraph.chessboard.field_image
     - field.field.paragraph.chessboard.field_imagestyle
+    - field.field.paragraph.chessboard.field_imgpadding
     - field.field.paragraph.chessboard.field_imgposition
     - field.field.paragraph.chessboard.field_text
     - paragraphs.paragraphs_type.chessboard
@@ -42,6 +43,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 4
+    region: content
+  field_imgpadding:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_imgposition:
     type: list_default

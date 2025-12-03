@@ -49,14 +49,16 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_bgcolor','field_text','field_imgposition','field_image','field_imagestyle','field_video') }}
+      {{ content|without('field_bgcolor','field_text','field_imgposition','field_imgpadding','field_image','field_imagestyle','field_video') }}
 	  
 	  {% if paragraph.field_imgposition.0.value =='left' %}
 <div class="row g-0">
     <div class="col-lg-6">
-	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
+	<div class="card border-0 h-100 ratio ratio-1x1 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
+    <div class="img-box {{content.field_imgpadding.0}}">
+		{{ content.field_image }}
     </div>
+	</div>
 	</div>
 	<div class="col-lg-6">
         <div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
@@ -71,8 +73,10 @@
 {% else %}
 <div class="row g-0">
     <div class="col-lg-6 order-1 order-lg-2">
-	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
+	<div class="card border-0 h-100 ratio ratio-1x1 {{ content.field_bgcolor.0 }} {{content.field_imagestyle.0}}">
+    <div class="img-box {{content.field_imgpadding.0}}">
+		{{ content.field_image }}
+    </div>
 	</div>
 	</div>
     <div class="col-lg-6 order-2 order-lg-1">
@@ -86,7 +90,7 @@
     </div>
 </div>
 {% endif %}
-<div class="chess-footer-bg {{ content.field_bgcolor.0 }}"></div>
+<div class="paragraph-footer {{ content.field_bgcolor.0 }}"></div>
     {% endblock %}
   </div>
 {% endblock paragraph %}

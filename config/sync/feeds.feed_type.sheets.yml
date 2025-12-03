@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.chessboard.field_bgcolor
     - field.field.paragraph.chessboard.field_image
     - field.field.paragraph.chessboard.field_imagestyle
+    - field.field.paragraph.chessboard.field_imgpadding
     - field.field.paragraph.chessboard.field_imgposition
     - field.field.paragraph.chessboard.field_text
     - node.type.sheet
@@ -85,6 +86,11 @@ custom_sources:
     label: chessboard_field_bgcolor
     machine_name: chessboard_field_bgcolor
     type: csv
+  chessboard_field_imgpadding:
+    value: chessboard_field_imgpadding
+    label: chessboard_field_imgpadding
+    machine_name: chessboard_field_imgpadding
+    type: csv
 mappings:
   -
     target: field_catalog_number
@@ -134,5 +140,11 @@ mappings:
     target: chessboard_field_bgcolor
     map:
       value: chessboard_field_bgcolor
+    settings:
+      language: ''
+  -
+    target: chessboard_field_imgpadding
+    map:
+      value: chessboard_field_imgpadding
     settings:
       language: ''
