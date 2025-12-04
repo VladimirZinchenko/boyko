@@ -24,6 +24,14 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_catalog_number:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -40,5 +48,4 @@ content:
     region: content
 hidden:
   feeds_item: true
-  field_catalog_number: true
   langcode: true

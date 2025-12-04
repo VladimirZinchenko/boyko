@@ -55,13 +55,13 @@
 	  {% if paragraph.field_imgposition.0.value =='left' %}
 <div class="row g-0">
     <div class="col-lg-6">
-	<div class="card border-0 h-100 ratio ratio-1x1 {{content.field_imagestyle.0}}">
+	<div class="card border-0 h-100 ratio ratio-4x3 {{content.field_imagestyle.0}}">
         {{ content.field_image }}
     </div>
 	</div>
 	<div class="col-lg-6">
-        <div class="card border-0 h-100">
-            <div class="card-body align-items-center justify-content-center d-flex">
+        <div class="card border-0 h-100 ratio ratio-1x1">
+            <div class="card-body align-items-lg-center justify-content-center d-flex">
                 <div class="p-4 {{ content.field_bgcolor.0 }}">
                     {{ content.field_text }}
                 </div>
@@ -77,8 +77,8 @@
 	</div>
 	</div>
     <div class="col-lg-6 order-2 order-lg-1">
-        <div class="card border-0 h-100">
-            <div class="card-body align-items-center justify-content-center d-flex">
+        <div class="card border-0 h-100 ratio ratio-4x3">
+            <div class="card-body align-items-lg-center justify-content-center d-flex">
                 <div class="p-4 {{ content.field_bgcolor.0 }}">
                     {{ content.field_text }}
                 </div>

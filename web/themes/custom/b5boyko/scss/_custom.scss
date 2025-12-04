@@ -47,45 +47,11 @@
 	transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
 	width: 100%;
 	height: inherit;
-	/*height: 320px;
-	@include media-breakpoint-up(sm) {
-		height: 400px;
-	}
-	@include media-breakpoint-up(md) {
-		height: 480px;
-	}
-	@include media-breakpoint-up(lg) {
-		height: 640px;
-	}*/
 }
 
 .paragraph {
 	video {
 	height: inherit;
-	/*@include media-breakpoint-up(sm) {
-		height: 400px;
-	}
-	@include media-breakpoint-up(md) {
-		height: 480px;
-	}
-	@include media-breakpoint-up(lg) {
-		height: 640px;
-	}*/
-	}
-	.card-body {
-		height: 320px;
-		@include media-breakpoint-up(sm) {
-		height: 280px;
-		}
-		@include media-breakpoint-up(md) {
-			height: 240px;
-		}
-		@include media-breakpoint-up(lg) {
-			height: 160px;
-		}
-		@include media-breakpoint-up(xl) {
-			height: 160px;
-		}
 	}
 }
 
@@ -93,21 +59,8 @@
 	@include media-breakpoint-down(sm) {
 		margin-left: -1.25rem;
 		margin-right: -1.25rem;
-	}/*
-	.img-fluid .field--name-field-image {
-		height: 320px;
-		@include media-breakpoint-up(sm) {
-			height: 400px;
-		}
-		@include media-breakpoint-up(md) {
-			height: 480px;
-		}
-		@include media-breakpoint-up(lg) {
-			height: 640px;
-		}
-	}*/
+	}
 }
-
 
 #block-b5boyko-socialauthlogin {
 	display: flex;
@@ -128,7 +81,13 @@
 	width: 100%;
 }
 
-
 .ratio-3x2 {
 	--bs-aspect-ratio: calc(2 / 3 * 100%);
+}
+
+.field--name-field-catalog-number {
+	position: absolute;
+    bottom: 0.25rem;
+    left: 0.5rem;
+    color: darkgray;
 }
