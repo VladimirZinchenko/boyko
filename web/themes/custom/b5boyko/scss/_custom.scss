@@ -34,7 +34,11 @@
 }
 
 .paragraph--type--album {
-
+	.card-body {
+		@include media-breakpoint-up(lg) {
+			height: 160px;
+		}
+	}
 }
     
 .img-cover .field--name-field-image {
