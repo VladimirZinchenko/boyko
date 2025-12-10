@@ -1,29 +1,33 @@
-uuid: 165348e5-09ca-450e-a877-9ffde8e3d86d
+uuid: 15eb760c-2972-4430-a3b5-1b475ffb691d
 langcode: uk
 status: true
 dependencies:
+  config:
+    - contact.form.order_catalog
   module:
-    - social_auth
+    - contact_block
     - system
     - user
   theme:
     - b5boyko
-id: b5boyko_socialauthlogin
+id: b5boyko_contactblock
 theme: b5boyko
 region: content
-weight: -2
+weight: 0
 provider: null
-plugin: social_auth_login
+plugin: contact_block
 settings:
-  id: social_auth_login
-  label: 'Continue with Google'
+  id: contact_block
+  label: 'Order catalog'
   label_display: visible
-  provider: social_auth
+  provider: contact_block
+  contact_form: order_catalog
+  form_display: default
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/welcome\r\n/user/login\r\n/user/register"
+    pages: /catalog
   user_role:
     id: user_role
     negate: false

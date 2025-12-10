@@ -1,17 +1,17 @@
-uuid: 08a0099b-954f-4ccd-bdd1-3d5c061ed653
+uuid: e7ffc114-a1ca-4ba3-81c9-1c572b162999
 langcode: uk
 status: true
 dependencies: {  }
-id: flipsheet_group
-label: Flipsheet
+id: navigation_group
+label: Navigation
 settings:
   images_loaded: true
   cell_selector: .gallery-cell
   initial_index: 0
-  accessibility: true
+  accessibility: false
   set_gallery_size: true
   resize: true
-  cell_align: left
+  cell_align: center
   contain: true
   percent_position: true
   right_to_left: false
@@ -20,11 +20,11 @@ settings:
   lazy_load: 1
   auto_play: null
   wrap_around: false
-  group_cells: null
+  group_cells: 3
   adaptive_height: false
   watch_css: false
-  as_nav_for: ''
-  drag_threshold: 30
+  as_nav_for: .flipsheet_group.flickity.flickity-enabled.is-draggable
+  drag_threshold: 3
   selected_attraction: 0.025
   friction: 0.28
   free_scroll_friction: 0.075

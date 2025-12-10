@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.sheet.body
     - field.field.node.sheet.feeds_item
     - field.field.node.sheet.field_catalog_number
+    - field.field.node.sheet.field_metatag
     - field.field.node.sheet.field_paragraph
     - node.type.sheet
   module:
     - entity_reference_revisions
+    - metatag
     - text
     - user
 id: node.sheet.default
@@ -31,6 +33,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 3
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
