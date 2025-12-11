@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_image
-    - image.style.media_library
+    - image.style.square
     - node.type.sheet
   module:
     - flickity_views
@@ -146,7 +146,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: media_library
+            image_style: square
             image_loading:
               attribute: lazy
           group_column: ''
@@ -250,6 +250,7 @@ display:
           admin_label: 'field_paragraph: Абзац'
           plugin_id: standard
           required: false
+      css_class: mt-4
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -270,7 +271,10 @@ display:
     display_options:
       defaults:
         pager: true
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:

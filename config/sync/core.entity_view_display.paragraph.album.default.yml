@@ -7,6 +7,7 @@ dependencies:
     - field.field.paragraph.album.field_image
     - field.field.paragraph.album.field_imagestyle
     - field.field.paragraph.album.field_text
+    - image.style.wide
     - paragraphs.paragraphs_type.album
   module:
     - image
@@ -29,7 +30,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: wide
       image_loading:
         attribute: lazy
     third_party_settings: {  }

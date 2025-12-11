@@ -1,0 +1,46 @@
+uuid: 386ebdfd-2fad-4af7-b7e0-904f2e2c7375
+langcode: uk
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+  module:
+    - file
+    - flipbook
+    - image
+    - imce
+id: flipbook.flipbook.default
+targetEntityType: flipbook
+bundle: flipbook
+mode: default
+content:
+  flipbook:
+    type: file_generic
+    weight: -3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: false
+    description:
+      theme: file_upload_help
+      description: 'Файл Gettext Portable Object.'
+  flipbook_cover:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    label: hidden
+  name:
+    type: string_textfield
+    weight: -6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

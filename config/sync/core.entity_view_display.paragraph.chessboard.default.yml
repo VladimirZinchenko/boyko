@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.chessboard.field_imgpadding
     - field.field.paragraph.chessboard.field_imgposition
     - field.field.paragraph.chessboard.field_text
+    - image.style.wide
     - paragraphs.paragraphs_type.chessboard
   module:
     - image
@@ -31,7 +32,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: wide
       image_loading:
         attribute: lazy
     third_party_settings: {  }

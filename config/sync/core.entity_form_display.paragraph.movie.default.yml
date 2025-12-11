@@ -4,12 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.movie.field_bgcolor
+    - field.field.paragraph.movie.field_image
     - field.field.paragraph.movie.field_imgposition
     - field.field.paragraph.movie.field_text
     - field.field.paragraph.movie.field_video
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.movie
   module:
     - file
+    - image
     - imce
     - text
 id: paragraph.movie.default
@@ -22,6 +25,14 @@ content:
     weight: 2
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_imgposition:
     type: options_select
