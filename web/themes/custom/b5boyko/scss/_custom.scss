@@ -1,7 +1,8 @@
 @include media-breakpoint-up(md){
 	.path-user .region-content,
 	.contact-message-feedback-form,
-	.contact-message-order-catalog-form	{
+	.contact-message-order-catalog-form,
+	.page-node-type-page .node__content {
 		width: 50%;
 		margin: auto;
 	}
