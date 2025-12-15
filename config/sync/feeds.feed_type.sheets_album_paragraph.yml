@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.album.field_bgcolor
     - field.field.paragraph.album.field_image
     - field.field.paragraph.album.field_imagestyle
+    - field.field.paragraph.album.field_ratio
     - field.field.paragraph.album.field_text
     - node.type.sheet
   module:
@@ -75,6 +76,11 @@ custom_sources:
     label: album_field_bgcolor
     machine_name: album_field_bgcolor
     type: csv
+  album_field_ratio:
+    value: album_field_ratio
+    label: album_field_ratio
+    machine_name: album_field_ratio
+    type: csv
 mappings:
   -
     target: field_catalog_number
@@ -118,5 +124,11 @@ mappings:
     target: album_field_bgcolor
     map:
       value: album_field_bgcolor
+    settings:
+      language: null
+  -
+    target: album_field_ratio
+    map:
+      value: album_field_ratio
     settings:
       language: null

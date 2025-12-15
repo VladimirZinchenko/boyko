@@ -49,25 +49,25 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_bgcolor','field_text','field_image','field_imagestyle','field_ratio') }}
-<div class="row g-0 justify-content-center {{ content.field_bgcolor.0 }}">
-    <div class="col-lg-9 pt-4 px-md-4">
-	<div class="card border-0 h-100 {{content.field_ratio.0}} {{content.field_imagestyle.0}}">
-        <div class="img-box">
-		{{ content.field_image }}
-		</div>
+      {{ content|without('field_text','field_video_youtube','field_image') }}
+
+<div class="row justify-content-md-center">
+    <div class="col-md-9 mt-4">
+        <div class="ratio ratio-16x9">
+            <iframe src="{{ content.field_video_youtube.0 }}" title="About Petro Boyko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
     </div>
-	</div>
-	<div class="col-lg-9">
-	<div class="card border-0 h-100 {{ content.field_bgcolor.0 }}">
-            <div class="card-body p-4 align-items-lg-center justify-content-center d-flex">
+	<div class="col-md-9">
+	<div class="card border-0 h-100">
+            <div class="card-body p-4 text-align-center">
                 <div>
                     {{ content.field_text }}
                 </div>
             </div>
     </div>
-	</div>
+	</div>	  
 </div>
+
     {% endblock %}
   </div>
 {% endblock paragraph %}

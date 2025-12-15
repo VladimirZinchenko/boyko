@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.album.field_bgcolor
     - field.field.paragraph.album.field_image
     - field.field.paragraph.album.field_imagestyle
+    - field.field.paragraph.album.field_ratio
     - field.field.paragraph.album.field_text
     - image.style.thumbnail
     - paragraphs.paragraphs_type.album
@@ -34,6 +35,12 @@ content:
   field_imagestyle:
     type: options_select
     weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ratio:
+    type: options_select
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
