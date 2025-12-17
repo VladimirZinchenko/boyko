@@ -17,7 +17,7 @@ provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: 'Request to GS'
+  label: 'Подати заявку'
   label_display: visible
   provider: contact_block
   contact_form: order_catalog
