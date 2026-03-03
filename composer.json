@@ -41,7 +41,7 @@
         "drupal/social_auth_google": "^4.0",
         "drupal/tamper": "^1.0@beta",
         "drupal/twig_tweak": "^3.4",
-        "drush/drush": "^13.6"
+        "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
