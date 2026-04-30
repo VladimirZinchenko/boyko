@@ -28,7 +28,7 @@
         "drupal/feeds_para_mapper": "^1.4",
         "drupal/feeds_tamper": "^2.0@RC",
         "drupal/flickity": "^3.0",
-        "drupal/flipbook": "^10.0",
+        "drupal/flipbook": "^11.0",
         "drupal/imce": "^3.1",
         "drupal/inline_entity_form": "^3.0@RC",
         "drupal/invite": "3.0.x-dev@dev",
@@ -41,7 +41,7 @@
         "drupal/social_auth_google": "^4.0",
         "drupal/tamper": "^1.0@beta",
         "drupal/twig_tweak": "^3.4",
-        "drush/drush": "^13.6"
+        "drush/drush": "^13.7"
     },
     "conflict": {
         "drupal/drupal": "*"
