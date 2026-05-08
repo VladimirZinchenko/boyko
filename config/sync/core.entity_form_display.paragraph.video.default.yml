@@ -10,6 +10,7 @@ dependencies:
     - paragraphs.paragraphs_type.video
   module:
     - image
+    - imce
     - text
 id: paragraph.video.default
 targetEntityType: paragraph
@@ -23,7 +24,9 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: true
   field_text:
     type: text_textarea
     weight: 1

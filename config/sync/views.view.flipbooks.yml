@@ -212,7 +212,7 @@ display:
             attributes: class|title
           list:
             element_type: div
-            attributes: class|row
+            attributes: 'class|row justify-content-center'
           row:
             element_type: div
             attributes: 'class|col-md-3 mb-5'
@@ -260,7 +260,10 @@ display:
           items_per_page: 6
       defaults:
         pager: false
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
     cache_metadata:
       max-age: -1
       contexts:

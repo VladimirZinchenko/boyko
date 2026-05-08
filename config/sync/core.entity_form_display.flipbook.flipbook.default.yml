@@ -22,7 +22,7 @@ content:
       progress_indicator: throbber
     third_party_settings:
       imce:
-        enabled: false
+        enabled: true
     description:
       theme: file_upload_help
       description: 'Файл Gettext Portable Object.'
@@ -33,7 +33,9 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+    third_party_settings:
+      imce:
+        enabled: true
     label: hidden
   name:
     type: string_textfield
