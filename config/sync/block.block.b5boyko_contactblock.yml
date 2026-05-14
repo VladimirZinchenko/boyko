@@ -13,12 +13,12 @@ dependencies:
 id: b5boyko_contactblock
 theme: b5boyko
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: contact_block
 settings:
   id: contact_block
-  label: 'Order catalog'
+  label: 'Замовити каталог'
   label_display: visible
   provider: contact_block
   contact_form: order_catalog

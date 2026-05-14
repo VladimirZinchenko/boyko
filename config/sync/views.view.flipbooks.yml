@@ -26,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Flipbooks
+      title: Каталог
       fields:
         name:
           id: name
@@ -277,11 +277,14 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
-      path: flipbooks
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: catalogs
       menu:
         type: normal
-        title: Flipbooks
+        title: Каталог
         description: ''
         weight: 0
         expanded: false

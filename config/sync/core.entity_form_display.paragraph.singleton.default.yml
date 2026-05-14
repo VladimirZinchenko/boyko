@@ -8,12 +8,14 @@ dependencies:
     - field.field.paragraph.singleton.field_image
     - field.field.paragraph.singleton.field_imagestyle
     - field.field.paragraph.singleton.field_imgposition
+    - field.field.paragraph.singleton.field_more
     - field.field.paragraph.singleton.field_text
     - image.style.thumbnail
     - paragraphs.paragraphs_type.singleton
   module:
     - file
     - image
+    - imce
     - text
 id: paragraph.singleton.default
 targetEntityType: paragraph
@@ -53,6 +55,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_more:
+    type: image_image
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings:
+      imce:
+        enabled: true
   field_text:
     type: text_textarea
     weight: 5

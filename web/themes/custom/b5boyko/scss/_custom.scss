@@ -27,9 +27,18 @@
 	}
 }
 
-.paragraph--type--singleton {
-
-}
+.paragraph--type--singleton .field--name-field-more {
+	display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+		.field__item {
+			width: 50%;
+			padding: 0.25rem;
+		img {
+		border: solid 1px $light;
+		}
+		}
+	}
 
 .paragraph--type--chessboard .paragraph-footer {
 	background-image: url(img/chess-footer-bg.png);
@@ -38,7 +47,7 @@
 .paragraph--type--album {
 	.card-body {
 		@include media-breakpoint-up(lg) {
-			height: 160px;
+			min-height: 160px;
 		}
 	}
 }

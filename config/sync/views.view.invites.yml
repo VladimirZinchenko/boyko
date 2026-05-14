@@ -190,7 +190,7 @@ display:
         metatag_display_extender:
           metatags: {  }
           tokenize: false
-      path: invites
+      path: invite
       menu:
         type: normal
         title: Invites

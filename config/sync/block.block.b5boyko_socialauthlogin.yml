@@ -11,7 +11,7 @@ dependencies:
 id: b5boyko_socialauthlogin
 theme: b5boyko
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: social_auth_login
 settings:

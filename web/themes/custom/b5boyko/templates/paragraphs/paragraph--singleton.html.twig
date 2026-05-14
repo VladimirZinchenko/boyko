@@ -50,13 +50,17 @@
 <div class="paragraph-bg" style="background-image: url('{{ content.field_bgimage.0 }}') !important;">
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_bgcolor','field_text','field_imgposition','field_image','field_imagestyle','field_bgimage') }}
+      {{ content|without('field_bgcolor','field_text','field_imgposition','field_imagestyle','field_bgimage','field_more') }}
 	  
 	  {% if paragraph.field_imgposition.0.value =='left' %}
 <div class="row g-0">
     <div class="col-lg-6">
 	<div class="card border-0 h-100 ratio ratio-4x3 {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
+		<div class="row g-0 justify-content-center align-content-center">
+		<div class="col-8 col-md-6">
+		{{ content.field_more }}
+		</div>
+		</div>
     </div>
 	</div>
 	<div class="col-lg-6">
@@ -73,7 +77,11 @@
 <div class="row g-0">
     <div class="col-lg-6 order-1 order-lg-2">
 	<div class="card border-0 h-100 ratio ratio-1x1 {{content.field_imagestyle.0}}">
-        {{ content.field_image }}
+		<div class="row g-0 justify-content-center align-content-center">
+		<div class="col-8 col-md-6">
+		{{ content.field_more }}
+		</div>
+		</div>
 	</div>
 	</div>
     <div class="col-lg-6 order-2 order-lg-1">
@@ -87,8 +95,8 @@
     </div>
 </div>
 {% endif %}
+<div class="paragraph-footer"></div>
     {% endblock %}
   </div>
-<div class="paragraph-footer"></div>
 </div>
 {% endblock paragraph %}

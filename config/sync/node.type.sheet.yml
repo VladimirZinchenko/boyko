@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Sheet
 type: sheet
-description: 'Page of Catalog'
+description: 'Page of Digest'
 help: null
 new_revision: false
 preview_mode: 1

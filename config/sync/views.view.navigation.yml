@@ -250,7 +250,7 @@ display:
           admin_label: 'field_paragraph: Абзац'
           plugin_id: standard
           required: false
-      css_class: mt-4
+      css_class: mb-2
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -290,7 +290,10 @@ display:
     display_plugin: page
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: navigation
     cache_metadata:
       max-age: -1

@@ -13,7 +13,7 @@ dependencies:
 id: b5boyko_views_block__navigation_block_1
 theme: b5boyko
 region: content
-weight: 1
+weight: -2
 provider: null
 plugin: 'views_block:navigation-block_1'
 settings:
@@ -27,7 +27,7 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /flipsheets
+    pages: "/flipsheets\r\n/digest"
   user_role:
     id: user_role
     negate: false
