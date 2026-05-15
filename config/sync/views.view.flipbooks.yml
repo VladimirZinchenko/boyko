@@ -26,7 +26,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Каталог
+      title: Catalogs
       fields:
         name:
           id: name
@@ -284,7 +284,7 @@ display:
       path: catalogs
       menu:
         type: normal
-        title: Каталог
+        title: Catalogs
         description: ''
         weight: 0
         expanded: false
