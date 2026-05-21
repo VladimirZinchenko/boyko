@@ -1,4 +1,4 @@
-uuid: 6f1ff90d-bee0-4510-b8de-dc18158f72ad
+uuid: f20e6b8e-0806-40bc-bb73-03b4a7323b4f
 langcode: uk
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - views.view.flipbooks
   module:
     - system
-    - user
     - views
   theme:
     - b5boyko
@@ -24,14 +23,6 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  user_role:
-    id: user_role
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
-    roles:
-      collector: collector
-      administrator: administrator
   request_path:
     id: request_path
     negate: false

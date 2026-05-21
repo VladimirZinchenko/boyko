@@ -1,4 +1,4 @@
-uuid: d62d999e-2b37-4967-829d-dc0fab53b224
+uuid: 4501320e-9a38-49f6-abc4-f853e3f492b4
 langcode: uk
 status: true
 dependencies:
@@ -14,7 +14,7 @@ content:
     type: file_default
     label: hidden
     settings:
-      use_description_as_link_text: false
+      use_description_as_link_text: true
     third_party_settings: {  }
     weight: 1
     region: content

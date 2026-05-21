@@ -1,4 +1,4 @@
 global-styling:
   css:
     theme:
-      scss/style.scss: {}
+      scss/style.scss: { css_path: '/css/' }
