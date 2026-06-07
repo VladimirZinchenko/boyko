@@ -10,6 +10,7 @@ dependencies:
     - comment
     - contextual
     - file
+    - flipbook
     - node
     - path
     - system
@@ -43,5 +44,6 @@ permissions:
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
+  - 'view flipbook entity'
   - 'view own unpublished content'
   - 'view the administration theme'
