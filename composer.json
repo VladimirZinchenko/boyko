@@ -36,6 +36,7 @@
         "drupal/metatag": "^2.2",
         "drupal/paragraphs": "^1.19",
         "drupal/pathauto": "^1.14",
+        "drupal/redirect": "^1.13",
         "drupal/scss_compiler": "^2.0@alpha",
         "drupal/semanticviews": "^3.1",
         "drupal/social_auth_apple": "^2.0",
