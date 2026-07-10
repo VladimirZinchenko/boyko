@@ -7,6 +7,10 @@
 	}
 }
 
+.block-page-title-block {
+	   text-align: center;
+}
+
 .paragraph-bg {
 	background-repeat: no-repeat;
 	background-attachment: scroll;
@@ -97,7 +101,9 @@
 		content: "";
 	}
 	@include media-breakpoint-up(md) {
+	.path-welcome & {
 		margin: 1rem 25%;
+		}
 	}
 }
 
