@@ -45,7 +45,7 @@
         "drupal/social_auth_google": "^4.0",
         "drupal/tamper": "^1.0@beta",
         "drupal/twig_tweak": "^3.4",
-        "drupal/upgrade_status": "^5.0@alpha",
+        "drupal/upgrade_status": "^5.0",
         "drush/drush": "^13.7",
         "scssphp/scssphp": "^2.0"
     },
